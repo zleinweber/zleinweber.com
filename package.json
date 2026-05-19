@@ -1,0 +1,30 @@
+{
+  "name": "zleinweber.com",
+  "version": "0.1.0",
+  "private": true,
+  "description": "zleinweber.com website",
+  "homepage": "https://zleinweber.com",
+  "bugs": {
+    "url": "https://github.com/zleinweber/zleinweber.com/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zleinweber/zleinweber.com.git"
+  },
+  "license": "ISC",
+  "author": "Zach Leinweber",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "astro": "^6.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "wrangler": "^4.0.0"
+  }
+}
