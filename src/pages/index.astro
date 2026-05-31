@@ -1,23 +1,16 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="zleinweber.com">
-  <h1>Hello, world.</h1>
-  <p class="lede">
-    This is a small personal site for notes, essays, how-tos, and the trail of
-    things I am reading and learning.
-  </p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1>Astro</h1>
+  </body>
+</html>
 
-  <section aria-labelledby="start">
-    <h2 id="start">Start here</h2>
-    <p>
-      The site is intentionally plain for now: static pages, content files in
-      the repository, and a build step that turns them into deployable HTML.
-    </p>
-    <p>
-      Future posts can live under <a href="/writing/">writing</a> and grow into
-      whatever structure becomes useful.
-    </p>
-  </section>
-</BaseLayout>
