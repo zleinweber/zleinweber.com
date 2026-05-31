@@ -2,6 +2,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "zleinweber-com",
   "compatibility_date": "2026-05-17",
+  "routes": [
+    {
+      "pattern": "zleinweber.com",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page"
