@@ -1,9 +1,17 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Not found | zleinweber.com">
-  <h1>Not found.</h1>
-  <p class="lede">The page you asked for does not exist.</p>
-  <p><a href="/">Return home</a></p>
-</BaseLayout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <title>404 Not Found</title>
+  </head>
+  <body>
+    <h1>Not Found.</h1>
+		<p class="lede">The page you asked for does not exist.</p>
+  </body>
+</html>
+
