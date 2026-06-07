@@ -1,40 +1,21 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = 'Blog';
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Header />
-    <h1>{pageTitle}</h1>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>What is astro?</h2>
+  <p>
+  It is a web framework for building content driven websites.
+  I am using to build a mostly static set of content
+  </p>
+  <p>
+  I'm on a step of the tutorial where I'm adding an Astro "Page".
+  This is more for me practicing astro than it is for me actually writing a real blog post
+  </p>
 
-    <h2>What is astro?</h2>
-    <p>
-    It is a web framework for building content driven websites.
-    I am using to build a mostly static set of content
-    </p>
-    <p>
-    I'm on a step of the tutorial where I'm adding an Astro "Page".
-    This is more for me practicing astro than it is for me actually writing a real blog post
-    </p>
-
-    <ul>
-      <li><a href="/posts/post-1/">Post 1</a></li>
-      <li><a href="/posts/post-2/">Post 2</a></li>
-      <li><a href="/posts/post-3/">Post 3</a></li>
-    </ul>
-    <Footer />
-    <script>
-      import "../scripts/menu.js";
-    </script>
-  </body>
-</html>
-
+  <ul>
+    <li><a href="/posts/post-1/">Post 1</a></li>
+    <li><a href="/posts/post-2/">Post 2</a></li>
+    <li><a href="/posts/post-3/">Post 3</a></li>
+  </ul>
+</BaseLayout>
