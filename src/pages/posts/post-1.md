@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My First Blog Post'
 pubDate: 20206-06-06
 description: 'This is my first post of my astro blog'
@@ -8,12 +9,6 @@ image:
   alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# My first blog post
-
-Published on: 20206-06-06
-
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
 ## What I've accomplished
 
 1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
