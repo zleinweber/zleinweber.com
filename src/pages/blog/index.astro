@@ -13,7 +13,9 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
     <header class="page-header">
       <p class="eyebrow">Notes & essays</p>
       <h1>Writing</h1>
-      <p class="lede">Occasional thoughts on what I’m learning, building, and noticing.</p>
+      <p class="lede">
+        Occasional thoughts on what I’m learning, building, and noticing.
+      </p>
     </header>
     <PostList posts={posts} />
   </section>

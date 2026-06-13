@@ -23,12 +23,19 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
       <h1>{title}</h1>
       <p class="lede">{description}</p>
       <div class="post-meta">
-        <time datetime={publishedAt.toISOString()}>{dateFormatter.format(publishedAt)}</time>
-        {updatedAt && (
-          <span>
-            Updated <time datetime={updatedAt.toISOString()}>{dateFormatter.format(updatedAt)}</time>
-          </span>
-        )}
+        <time datetime={publishedAt.toISOString()}
+          >{dateFormatter.format(publishedAt)}</time
+        >
+        {
+          updatedAt && (
+            <span>
+              Updated{' '}
+              <time datetime={updatedAt.toISOString()}>
+                {dateFormatter.format(updatedAt)}
+              </time>
+            </span>
+          )
+        }
       </div>
     </header>
     <div class="prose">

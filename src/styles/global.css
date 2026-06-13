@@ -8,8 +8,9 @@
   --color-accent-dark: #4b6254;
   --color-blue: #52758b;
   --color-blue-light: #c9d9df;
-  --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-serif: Iowan Old Style, Baskerville, "Times New Roman", serif;
+  --font-sans:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: Iowan Old Style, Baskerville, 'Times New Roman', serif;
   --content-width: 44rem;
   --site-width: 70rem;
 }
@@ -116,11 +117,11 @@ a:focus-visible {
 }
 
 .site-header nav a:hover,
-.site-header nav a[aria-current="page"] {
+.site-header nav a[aria-current='page'] {
   color: var(--color-text);
 }
 
-.site-header nav a[aria-current="page"] {
+.site-header nav a[aria-current='page'] {
   text-decoration: underline;
   text-decoration-color: var(--color-blue);
   text-underline-offset: 0.45rem;
