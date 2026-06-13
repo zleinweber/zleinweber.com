@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="zleinweber.com favicon">
-  <rect width="64" height="64" rx="10" fill="#171717" />
-  <path d="M16 18h32L22 46h27" fill="none" stroke="#5eead4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ZL">
+  <rect width="64" height="64" fill="#faf8f2" />
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#39423c" stroke-width="3" />
+  <path
+    d="M16 22h15L16 42h15M37 22v20h12"
+    fill="none"
+    stroke="#39423c"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
 </svg>
