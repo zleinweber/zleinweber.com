@@ -8,7 +8,7 @@ export const GET: APIRoute = async (context) => {
   );
 
   return rss({
-    title: 'Zach Leinweber',
+    title: 'Zach Leinweber - Writing',
     description: 'Notes and essays by Zach Leinweber.',
     site: context.site ?? 'https://zleinweber.com',
     items: posts.map((post) => ({
