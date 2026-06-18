@@ -19,6 +19,7 @@ const siteName = 'Zach Leinweber';
 const pageTitle = title === siteName ? title : `${title} | ${siteName}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL(image, Astro.site);
+const rssFeedURL = new URL('rss.xml', Astro.site);
 ---
 
 <!doctype html>
@@ -31,6 +32,12 @@ const socialImageURL = new URL(image, Astro.site);
     <meta name="theme-color" content="#faf8f2" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={`${siteName} RSS Feed`}
+      href={rssFeedURL}
+    />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
